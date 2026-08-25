@@ -1,9 +1,11 @@
 // 导入顶部导航组件。
 import {SiteHeader} from "@/components/site-header";
 
-
 // 导入首页 Hero 主视觉组件。
 import { HeroSection } from "@/components/hero-section";
+
+// 导入首页挑战分类组件。
+import {ChallengeLibrarySection} from "@/components/challenge-library-section";
 
 export default function HomePage() {
     return (
@@ -16,6 +18,8 @@ export default function HomePage() {
             <main>
                 {/* 首页主视觉区域。 */}
                 <HeroSection/>
+                {/* 挑战分类区域。 */}
+                <ChallengeLibrarySection/>
             </main>
         </>
     );
