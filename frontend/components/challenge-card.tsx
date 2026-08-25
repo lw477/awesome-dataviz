@@ -40,9 +40,19 @@ export function ChallengeCard({challenge}: {challenge: Challenge}) {
                 {difficultyColors[challenge.difficulty]}
             </span>
             <span className="text-xs text-neutral-500">
-                {difficultyLabels[challenge.status]}
+                {statusLabels[challenge.status]}
             </span>
         </div>
+
+            <p className="mt-8 text-xs font-medium uppercase tracking-wide text-neutral-500">
+                {challenge.chartType} chart
+            </p>
+            <h3 className="mt-2 text-xl font-semibold text-white transition-colors group-hover:text-cyan-300">
+                {challenge.title}
+            </h3>
+
+            <p className="mt-3 flex-1 text-sm leading-6 text-neutral-400">
+            </p>
             
         </article>
     )
